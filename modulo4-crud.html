@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Módulo 4: CRUD | Curso ASP.NET ADSO</title>
+    <style>
+        :root { --primary: #512bd4; --secondary: #0078d4; --bg: #f4f7f6; --text: #333; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: var(--text); line-height: 1.6; }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 1rem 0; }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links a { color: white; text-decoration: none; font-weight: bold; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .success-box { border: 2px solid #28a745; background: #d4edda; color: #155724; padding: 20px; border-radius: 5px; text-align: center; margin-top: 30px; }
+        .nav-btns { margin-top: 40px; display: flex; justify-content: space-between; }
+        .btn { background: var(--secondary); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Instructor ADSO &lt;/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="modulo1-sql.html">Módulo 1: SQL</a></li>
+            <li><a href="modulo2-vs.html">Módulo 2: VS</a></li>
+            <li><a href="modulo3-conexion.html">Módulo 3: Conexión</a></li>
+            <li><a href="modulo4-crud.html" style="color: yellow;">Módulo 4: CRUD</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Módulo 4: Generando el CRUD (Scaffolding)</h1>
+    <p>Este es el paso mágico. Vamos a usar la herramienta de "Andamiaje" (Scaffolding) para que Visual Studio escriba el código C# por nosotros.</p>
+
+    <h3>Paso 4.1: Crear el Modelo</h3>
+    <p>En la carpeta <strong>Models</strong>, crea una clase llamada <code>Estudiante.cs</code> y define las propiedades igual que en tu base de datos.</p>
+
+    <h3>Paso 4.2: Agregar Controlador</h3>
+    <ol>
+        <li>Clic derecho en la carpeta <strong>Controllers</strong>.</li>
+        <li>Selecciona <strong>Agregar > Controlador</strong>.</li>
+        <li>Elige: <strong>Controlador de MVC con vistas, usando Entity Framework</strong>.</li>
+        <li>En "Clase de modelo", selecciona <code>Estudiante</code>.</li>
+        <li>En "Clase de contexto", haz clic en "Nuevo contexto" y ponle de nombre <code>ApplicationDbContext</code>.</li>
+        <li>Haz clic en <strong>Agregar</strong>.</li>
+    </ol>
+
+    <div class="success-box">
+        <h2>¡Felicidades Aprendiz!</h2>
+        <p>Has creado exitosamente una aplicación web completa. Presiona <strong>F5</strong> y navega a <code>/Estudiantes</code> para ver tu aplicación funcionando.</p>
+    </div>
+
+    <div class="nav-btns">
+        <a href="modulo3-conexion.html" class="btn">&larr; Anterior: Conexión</a>
+        <a href="index.html" class="btn">Volver al Inicio</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 - Curso Tecnólogo ADSO.</p>
+</footer>
+
+</body>
+</html>
